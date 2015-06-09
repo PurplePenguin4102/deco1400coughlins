@@ -13,10 +13,10 @@ The organisation of everything was a little ehh before, so I've come up with a n
 
 Steps to Success!
 
-i. clone this repo in your harddrive (either download the zip or clone it properly)
-ii. click through every file and note the ones where I've said <!-- (YOUR NAME) DO THIS -->
-iii. Complete the file as you see fit (use the mockups and the original site to guide you)
-iv. When you're happy submit a pull request or send me a message on facebook with the files you want to put in
+1. clone this repo in your harddrive (either download the zip or clone it properly)
+2. click through every file and note the ones where I've said <!-- (YOUR NAME) DO THIS -->
+3. Complete the file as you see fit (use the mockups and the original site to guide you)
+4. When you're happy submit a pull request or send me a message on facebook with the files you want to put in
 
 Notes from fixing stuff:
 
