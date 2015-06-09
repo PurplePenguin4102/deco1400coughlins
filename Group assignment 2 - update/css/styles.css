@@ -67,13 +67,47 @@ body
 		font-size: 14px;
 		color: #090909;
 	}
-	
+
+#top-bar
+	{
+		position: absolute;
+		background-color: #FFD901;
+		height: 191px;
+		width: 100%;
+		top: 0px;
+		z-index: -1;
+	}
+
+div.outside.gradient
+	{
+		position: absolute;
+		top: 191px;
+		height: 50px;
+		width: 100%;
+		z-index: -1;
+		background: -webkit-linear-gradient(#ffd901 0%, #f9f9f9 95%); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(#ffd901 0%, #f9f9f9 95%); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(#ffd901 0%, #f9f9f9 95%); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(#ffd901 0%, #f9f9f9 95%); /* Standard syntax (must be last) */
+	}
+
+#bottom-bar 
+	{
+		position: relative;
+		background-color: #FFD901;
+		height: 100px;
+		width: 100%;
+		bottom: 0px;
+		z-index: -1;
+	}
+
 #big-container 
 	{	
 		width: 1000px;
 		height: auto;
 		margin-left: auto;
 		margin-right: auto;
+		z-index:10;
 	}
 /******************
 *    head  *
@@ -147,17 +181,19 @@ body
 		height: 20px;
 	}
 
-	#nav ul li a:hover
-		{
-			color: #090909;
-			font-size: 15px;
-			background-color: #fffa8b;
-		}		
+#nav ul li a:hover
+	{
+		color: #090909;
+		font-size: 15px;
+		background-color: #fffa8b;
+	}		
 
 #nav ul ul 
 	{
-		display: none;
+		opacity: 0;
+		visibility: hidden;
 		position: absolute;
+		transition: opacity 0.5s;
 	}
 	
 #nav ul ul li	
@@ -165,16 +201,22 @@ body
 		width: 245px;
 	}
 	
-#nav ul ul li	a
+#nav ul ul li a
 	{
 		text-align: left;
 		background-color: #fffa8b;
 		color: #090909;	
 	}
-	#nav ul li:hover ul
-		{
-			display: block;
-		}
+
+#nav ul ul li a:hover
+	{
+		background-color: #FFD901;
+	}
+#nav ul li:hover ul
+	{
+		visibility: visible;
+		opacity: 1;
+	}
 	
 #nav .active
 	{
@@ -200,13 +242,13 @@ body
 		background-color: #fff3cd;
 	}
 	
-#gradient
+div.gradient
 	{
-		height: 35px;
-		background: -webkit-linear-gradient(#ffd901 0%, #f9f9f9 95%); /* For Safari 5.1 to 6.0 */
-		background: -o-linear-gradient(#ffd901 0%, #f9f9f9 95%); /* For Opera 11.1 to 12.0 */
-		background: -moz-linear-gradient(#ffd901 0%, #f9f9f9 95%); /* For Firefox 3.6 to 15 */
-		background: linear-gradient(#ffd901 0%, #f9f9f9 95%); /* Standard syntax (must be last) */
+		height: 50px;
+		background: -webkit-linear-gradient(#ffd901 0%, white 95%); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(#ffd901 0%, white 95%); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(#ffd901 0%, white 95%); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(#ffd901 0%, white 95%); /* Standard syntax (must be last) */
 	}
 	
 /******************
@@ -238,6 +280,8 @@ ul.circle
 		 overflow: hidden;
 		 background-color: #ffd901;
 		 clear: both;
+		 padding: 0 23%;
+		 border-radius: 300px 300px 0 0;
 	}
 	
 #footer p
@@ -349,6 +393,7 @@ h2
 		font-family: Georgia,Times,"Times New Roman",serif;
 		font-size: 25px; 
 		text-align: center;
+		padding: 8px;
 	}
 	
 h3
