@@ -1,9 +1,11 @@
 #content ul li p 
 	{
 		position: relative;
+		margin: 5px;
 	}
 li a.email
 	{
 		text-align: right;
-		fl
+		position: absolute;
+		left: 180px;
 	}

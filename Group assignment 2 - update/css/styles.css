@@ -21,7 +21,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font: arial;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -460,4 +460,3 @@ a:active
 		text-decoration: underline;
 	}
 	
-@media screen 
