@@ -17,3 +17,19 @@
 	{
 		clear: both;
 	}
+
+#content div.gallery
+	{
+		float: left;
+		height: 200px;
+		width: 200px;
+		margin: 20px 55px;
+	}
+
+#content div.gallery img
+	{
+		width: 150px;
+		height: 100px;
+		background: green;
+	}
+
