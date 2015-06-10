@@ -21,7 +21,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font: arial;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -34,6 +34,7 @@ body {
 }
 ol, ul {
 	list-style: none;
+	margin-top: -8px;
 }
 blockquote, q {
 	quotes: none;
@@ -139,7 +140,7 @@ div.outside.gradient
 	
 .headingpic
 	{	
-		height: 150px;
+		height: 142px;
 		float: left;
 	}		
 
