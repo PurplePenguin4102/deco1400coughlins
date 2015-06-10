@@ -1,0 +1,52 @@
+/*----This is the style sheet for newsletter-archive.html---------*/
+#newsletter
+	{
+		width: 750px;
+		margin: 20px 0 0 20px;
+	}
+
+	#newsletter h1
+		{
+			font-weight: normal;
+			margin-top: 10px;
+			float: left;
+		}
+	
+	#newsletter ul
+		{
+			font-size: 12px;
+			margin-left: 110px;
+		}	
+		#newsletter ul li
+			{
+				list-style-type: disc;
+			}	
+		
+	#newsletter p.number
+		{
+			margin: 25px 20px 0 0;
+			float: left;
+			font-size: 60px;
+			color: #ffd901;
+		}
+	
+	#newsletter a
+		{
+			margin-top: 20px;
+			display: block;
+			height: 14px;
+			padding: 10px;
+			text-align: center;
+			font-weight: bold;
+			float: right;
+			background-color: #fffa8b;
+		}
+		
+		#newsletter a:hover
+			{
+				color: #090909;
+				font-size: 15px;
+				background-color: #FFD901;
+				text-decoration: none;
+				transition: background-color 0.5s;
+			}	
