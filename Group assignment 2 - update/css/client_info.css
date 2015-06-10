@@ -1,0 +1,19 @@
+#content div.right_images
+	{
+		height: 200px;
+		width: 300px;
+		background: blue;
+		float: left;
+		margin-top: 25px;
+	}
+#content div.explanation
+	{
+		height: 200px;
+		width: 600px;
+		float: right;
+		margin-top: 25px;
+	}
+#content div.clear
+	{
+		clear: both;
+	}
