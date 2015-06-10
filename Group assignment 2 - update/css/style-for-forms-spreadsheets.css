@@ -36,3 +36,8 @@
 				text-decoration: none;
 				transition: background-color 0.5s;
 			}	
+
+p	
+	{
+		margin: 20px;
+	}

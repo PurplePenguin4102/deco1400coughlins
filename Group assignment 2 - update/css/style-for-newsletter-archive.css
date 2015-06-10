@@ -28,11 +28,13 @@
 			float: left;
 			font-size: 60px;
 			color: #ffd901;
+			text-shadow: 3px 3px 2px #888888;
 		}
 	
 	#newsletter a
 		{
 			margin-top: 20px;
+			box-shadow: 5px 5px 2px #888888;
 			display: block;
 			height: 14px;
 			padding: 10px;
