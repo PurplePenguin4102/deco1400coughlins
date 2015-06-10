@@ -164,6 +164,7 @@ div.outside.gradient
 		background: #090909;
 		position:relative;
         z-index:100;
+        width: 999px;
 	}
 	
 #nav li
