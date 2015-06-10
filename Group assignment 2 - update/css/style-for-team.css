@@ -1,0 +1,32 @@
+
+.personalintro
+	{
+		float: right;
+		width: 720px;
+	}
+	
+.teamphoto
+	{
+		margin-left: 20px;
+		-moz-border-radius:10px; 
+		-webkit-border-radius:10px; 
+		border-radius:10px; 
+	}
+	.teamphoto:hover
+			{
+			-moz-box-shadow: 5px 5px 5px #ccc; 
+			-webkit-box-shadow: 5px 5px 5px #ccc; 
+			box-shadow: 5px 5px 5px #ccc; 
+			}
+	
+.photobox
+	{
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+	
+#content h5
+	{
+		text-align: left;
+		font-size: 15px;
+	}
