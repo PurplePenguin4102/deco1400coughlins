@@ -1,0 +1,27 @@
+em
+	{
+		font-size: 22px;
+		color: #ffd901;
+		text-shadow: 2px 1px 1px #333333;
+	}
+	
+hr
+	{
+		border: 10px solid #ffd901;
+	}
+	
+#content h5
+	{
+		text-align: left;
+	}
+	
+#content ul
+			{
+				margin-left: 20px;
+			}	
+			
+#content li
+			{
+				list-style-image: url(../images/bullet-yellow.png);
+				padding: 5px;
+			}	
