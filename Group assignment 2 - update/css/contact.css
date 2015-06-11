@@ -1,3 +1,8 @@
+#content ul li
+{
+	position: relative;
+}
+
 #content ul li p 
 {
 	position: relative;
@@ -34,4 +39,11 @@ label
 #message
 {	
 	min-height: 158px;
+}
+
+.number
+{
+	position: absolute;
+	left: 180px;
+	top: 3px;
 }
