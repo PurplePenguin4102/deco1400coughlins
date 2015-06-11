@@ -86,3 +86,16 @@ img.error
 	margin-top: 6px;
 	display: none;
 }
+/* https://css-tricks.com/snippets/html/get-directions-form-google-maps/ */
+#directionForm label
+{
+	width: 100px;
+	margin-top: 8px;
+}
+
+
+#directionForm input.direction_button
+{
+	width: 90px;
+	margin-left: 10px;
+}

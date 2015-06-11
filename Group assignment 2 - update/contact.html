@@ -11,6 +11,7 @@
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 		<script type="text/javascript" src="js/maps.js"></script>
 		<script type="text/javascript" src="js/validate.js"></script>
+		<script type="text/javascript" src="js/toowoomba.js"></script>
 	</head>
 	
 	<body>
@@ -111,6 +112,15 @@
 						<input type="submit" value="Send" id="send">
 					</form>
 					<div class="clear"></div>
+
+					<!--Directions form from https://css-tricks.com/snippets/html/get-directions-form-google-maps/-->
+					<form action="http://maps.google.com/maps" method="get" id="directionForm" target="_blank">
+						<label for="saddr">Get Directions:</label>
+						<input type="text" name="saddr" id="address" placeholder"Your Address">
+						<input type="hidden" name="daddr" value="10 market street, Brisbane" id="daddr">
+						<input class="direction_button" type="submit" value="Brisbane">
+						<input class="direction_button" type="button" value="Toowoomba" id="toowoomba">
+					</form>
 					<!--Google Maps from https://developers.google.com/maps/tutorials/fundamentals/adding-a-google-map -->
 					<div id="map-canvas-brisbane"></div>
 					<div id="map-canvas-toowoomba"></div>
