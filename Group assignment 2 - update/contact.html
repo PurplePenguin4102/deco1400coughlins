@@ -8,6 +8,9 @@
 		<meta name="robots" content="index, follow">
 		<link rel="stylesheet" href="css/styles.css" type="text/css">
 		<link rel="stylesheet" href="css/contact.css" type="text/css">
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+		<script type="text/javascript" src="js/maps.js"></script>
+		<script type="text/javascript" src="js/validate.js"></script>
 	</head>
 	
 	<body>
@@ -59,18 +62,15 @@
 				</ul>
 				<div class="clear"></div>
 			</div>
-			
-
+		
 			<h2>Contact Us</h2>
 
-			
 			<div id="content" >
 					<div id="contactmail">
 						<h3>Phone</h3>
 						<ul>
 							<li><p>BRISBANE phone</p> <div class="number">07&nbsp;3236&nbsp;2726</div></li>
 							<li><p>TOOWOOMBA phone</p> <div class="number">07&nbsp;4639&nbsp;3332</div></li>
-
 						</ul>
 						<h3>Contact Email</h3>
 						<ul>
@@ -91,23 +91,30 @@
 					</div>
 					
 					<h3>Submit your message below</h3>
-					<form action="#" method="post">	
+					<form action="#" method="post" id="messageForm">	
 						<label for="name">Name:</label>
-						<input type="text" name="name" id="name" placeholder="John Smith">
+						<input type="text" name="name" id="name" placeholder="John Smith"> 
+						<img id="nameLabel" class="error" src="images/error.png" alt="error">
+						
 						<label for="email">Email:</label>
-						<input type="text" name="email" id="email" placeholder="you@somewhere.com">
+						<input type="text" name="email" id="email" placeholder="you@somewhere.com"> 
+						<img id="emailLabel" class="error" src="images/error.png" alt="error">
+						
 						<label for="subject">Subject:</label>
-						<input type="text" name="subject" id="subject">
+						<input type="text" name="subject" id="subject"> 
+						<img id="subjectLabel" class="error" src="images/error.png" alt="error">
+						
 						<label for="message">Message:</label>
-						<textarea id="message"></textarea>
+						<textarea id="message"></textarea> 
+						<img id="messageLabel" class="error" src="images/error.png" alt="error">
+						
 						<input type="submit" value="Send" id="send">
 					</form>
 					<div class="clear"></div>
-					
-					<div id="contactmap">
-						<img src="images/Capture.png" alt="map">
-					</div>
-					
+					<!--Google Maps from https://developers.google.com/maps/tutorials/fundamentals/adding-a-google-map -->
+					<div id="map-canvas-brisbane"></div>
+					<div id="map-canvas-toowoomba"></div>
+					<div class="clear"></div>
 			</div>
 		</div>		
 
