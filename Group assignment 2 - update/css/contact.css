@@ -22,6 +22,13 @@ form input
 	margin-top: 5px;
 }
 
+form textarea
+{
+	width: 394px;
+	float: left;
+	margin-top: 5px;
+}
+
 #send
 {
 	float: right;
