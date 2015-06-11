@@ -23,6 +23,6 @@ hr
 			
 #content li
 			{
-				list-style-image: url(../images/bullet-yellow.png);
+				list-style: circle;
 				padding: 5px;
 			}	
