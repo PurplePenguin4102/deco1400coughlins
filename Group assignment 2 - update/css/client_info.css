@@ -1,35 +1,41 @@
 #content div.right_images
-	{
-		height: 200px;
-		width: 300px;
-		background: blue;
-		float: left;
-		margin-top: 25px;
-	}
+{
+	height: 200px;
+	width: 300px;
+	float: left;
+	margin-top: 25px;
+}
+
+#content div.right_images img
+{
+	width: 250px;
+
+	float: right;
+}
+
 #content div.explanation
-	{
-		height: 200px;
-		width: 600px;
-		float: right;
-		margin-top: 25px;
-	}
+{
+	height: 200px;
+	width: 600px;
+	float: right;
+	margin-top: 25px;
+}
+
 #content div.clear
-	{
-		clear: both;
-	}
+{
+	clear: both;
+}
 
 #content div.gallery
-	{
-		float: left;
-		height: 200px;
-		width: 200px;
-		margin: 20px 55px;
-	}
+{
+	float: left;
+	height: 200px;
+	width: 200px;
+	margin: 20px 55px;
+}
 
 #content div.gallery img
-	{
-		width: 150px;
-		height: 100px;
-		background: green;
-	}
+{
+	width: 150px;
+}
 

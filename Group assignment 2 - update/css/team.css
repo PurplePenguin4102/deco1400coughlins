@@ -4,7 +4,13 @@
 		float: right;
 		width: 720px;
 	}
-	
+
+.teamheader
+{
+	width: 967px;
+	margin-top: -27px;
+}
+
 .teamphoto
 	{
 		margin-left: 20px;
