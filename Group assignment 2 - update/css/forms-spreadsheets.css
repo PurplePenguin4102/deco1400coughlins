@@ -1,0 +1,44 @@
+/*----This is the style sheet for forms-spreadsheets.html---------*/
+#content .form-download 
+{
+	width: 700px;
+	margin: 20px 0 0 20px;
+}
+
+#content .form-download h1
+{
+	font-weight: normal;
+	margin-top: 5px;
+	float: left;
+}
+
+#content .form-download  p
+{
+	font-size: 12px;
+	clear: both;
+}
+
+#content .form-download  a
+{
+	display: block;
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+	float: right;
+	background-color: #fffa8b;
+	box-shadow: 5px 5px 2px #888888;
+}
+		
+#content .form-download  a:hover
+{
+	color: #090909;
+	font-size: 15px;
+	background-color: #FFD901;
+	text-decoration: none;
+	transition: background-color 0.5s;
+}	
+
+p	
+{
+	margin: 20px;
+}
