@@ -1,0 +1,22 @@
+#content1{
+	float:left;
+}
+
+#content2{
+	padding:5px;
+	float:right;
+	width: 600px;
+	height: 202px;
+}
+
+#content3{
+	padding: 10px;
+	float:left;
+}
+
+#content4{
+	padding:5px;
+	float:right;
+	width: 600px;
+	height: 239px;
+}
