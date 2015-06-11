@@ -52,3 +52,8 @@
 	-webkit-box-shadow: 5px 5px 5px #ccc; 
 	box-shadow: 5px 5px 5px #ccc; 
 }
+
+#content a.image_link
+{
+	background-color: white;
+}
