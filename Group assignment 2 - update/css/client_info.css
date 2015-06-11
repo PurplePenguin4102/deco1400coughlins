@@ -9,7 +9,6 @@
 #content div.right_images img
 {
 	width: 250px;
-
 	float: right;
 }
 
@@ -39,3 +38,17 @@
 	width: 150px;
 }
 
+#content img
+{
+	-moz-border-radius:10px; 
+	-webkit-border-radius:10px; 
+	border-radius:10px; 
+	transition: box-shadow 0.5s;
+}
+
+#content img:hover
+{
+	-moz-box-shadow: 5px 5px 5px #ccc; 
+	-webkit-box-shadow: 5px 5px 5px #ccc; 
+	box-shadow: 5px 5px 5px #ccc; 
+}

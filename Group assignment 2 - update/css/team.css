@@ -1,9 +1,9 @@
 /*----This is the style sheet for team.html---------*/
 .personalintro
-	{
-		float: right;
-		width: 720px;
-	}
+{
+	float: right;
+	width: 720px;
+}
 
 .teamheader
 {
@@ -12,29 +12,29 @@
 }
 
 .teamphoto
-	{
-		margin-left: 20px;
-		width: 150px;
-		-moz-border-radius:10px; 
-		-webkit-border-radius:10px; 
-		border-radius:10px; 
-		transition: box-shadow 0.5s;
-	}
-	.teamphoto:hover
-			{
-			-moz-box-shadow: 5px 5px 5px #ccc; 
-			-webkit-box-shadow: 5px 5px 5px #ccc; 
-			box-shadow: 5px 5px 5px #ccc; 
-			}
+{
+	margin-left: 20px;
+	width: 150px;
+	-moz-border-radius:10px; 
+	-webkit-border-radius:10px; 
+	border-radius:10px; 
+	transition: box-shadow 0.5s;
+}
+.teamphoto:hover
+{
+	-moz-box-shadow: 5px 5px 5px #ccc; 
+	-webkit-box-shadow: 5px 5px 5px #ccc; 
+	box-shadow: 5px 5px 5px #ccc; 
+}
 	
 .photobox
-	{
-		margin-top: 40px;
-		margin-bottom: 20px;
-	}
+{
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
 	
 #content h5
-	{
-		text-align: left;
-		font-size: 15px;
-	}
+{
+	text-align: left;
+	font-size: 15px;
+}
