@@ -35,7 +35,7 @@
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="team.html">Our Team</a></li>
-					<li><a href="service.html">Our Services</a></li>
+					<li><a href="service.html">Our Services</a>
 						<ul>
 							<li><a href="business-personal-taxation.html">Business &amp; Personal Taxation</a></li>
 							<li><a href="business-advice-and-management.html">Business Advice &amp; Management</a></li>
@@ -84,25 +84,24 @@
 							<li><p>Tuan <a class="email" href="mailto:tuan@coughlin.com.au">tuan@coughlin.com.au</a></p></li>
 						</ul>
 					</div>
-						
-					<div id="contactform">
-						<h3>Submit your message below</h3>
-						<div id="form" >
-							<p>Name:</p>
-							<input type="text" name="name">
-							<p>Email:</p>
-							<input type="text" name="email">
-							<p>Subject:</p>
-							<input type="text" name="subject">
-							<p>Message:</p>
-							<input type="text" name="message">
-						</div>
-					</div>
+					
+					<h3>Submit your message below</h3>
+					<form action="#" method="post">	
+						<label for="name">Name:</label>
+						<input type="text" name="name" id="name" autofocus>
+						<label for="email">Email:</label>
+						<input type="text" name="email" id="email" placeholder="you@somewhere.com">
+						<label for="subject">Subject:</label>
+						<input type="text" name="subject" id="subject">
+						<label for="message">Message:</label>
+						<input type="textarea" name="message" id="message">
+						<input type="submit" value="Send" id="send">
+					</form>
 					<div class="clear"></div>
 					
 					<div id="contactmap">
 						<img src="images/Capture.png" alt="map">
-					</div>	
+					</div>
 					
 			</div>
 		</div>		

@@ -1,11 +1,37 @@
 #content ul li p 
-	{
-		position: relative;
-		margin: 5px;
-	}
+{
+	position: relative;
+	margin: 5px;
+}
 li a.email
-	{
-		text-align: right;
-		position: absolute;
-		left: 180px;
-	}
+{
+	text-align: right;
+	position: absolute;
+	left: 180px;
+}
+
+form input
+{
+	width: 394px;
+	float: left;
+	margin-top: 5px;
+}
+
+#send
+{
+	float: right;
+	width: 50px;
+	height: 20px;
+}
+
+label
+{
+	float:left;
+	width: 70px;
+	margin-top: 5px;
+}
+
+#message
+{	
+	min-height: 158px;
+}
