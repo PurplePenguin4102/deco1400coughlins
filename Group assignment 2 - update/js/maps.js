@@ -8,12 +8,12 @@ function initialize() {
         //set up the basic options, latitude, longitude and zoom
         var mapOptionsBris = {
           center: new google.maps.LatLng(-27.4697484, 153.0297863),
-          zoom: 15,
+          zoom: 14,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         }
         var mapOptionsToo = {
           center: new google.maps.LatLng(-27.562146, 151.95269),
-          zoom: 15,
+          zoom: 14,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         }
 
