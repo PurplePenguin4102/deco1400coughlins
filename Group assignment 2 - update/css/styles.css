@@ -154,6 +154,11 @@ div.outside.gradient
 		margin-left: 150px;
 		line-height: 20px;
 	}
+
+p.specialties
+{
+	margin: 0;
+}
 	
 /******************
 *    nav  *
@@ -254,7 +259,7 @@ div.gradient
 		background: -moz-linear-gradient(#ffd901 0%, white 95%); /* For Firefox 3.6 to 15 */
 		background: linear-gradient(#ffd901 0%, white 95%); /* Standard syntax (must be last) */
 	}
-	
+
 /******************
 *    home  *
 ******************/		
