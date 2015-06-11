@@ -382,7 +382,7 @@ ul.circle
 #footer p
 	{
 		font-size: 12px;
-		margin: 0;
+		margin: -1px;
 	}
 	
 #announcement
