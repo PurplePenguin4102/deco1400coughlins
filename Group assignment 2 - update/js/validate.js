@@ -29,23 +29,36 @@ function validate(event) {
 		name.style.width = "364px";
 		//prevent submission
 		event.preventDefault();
+	} else {
+		//we reset the styling of the error div if there's no error.
+		nameLabel.style.display = "none";
+		name.style.width = "394px";
 	}
 	
 	if (email.value == "") {
 		emailLabel.style.display = "inline";
 		email.style.width = "364px";
 		event.preventDefault();
+	} else {
+		nameLabel.style.display = "none";
+		name.style.width = "394px";
 	}
 
 	if (subject.value == "") {
 		subjectLabel.style.display = "inline";
 		subject.style.width = "364px";
 		event.preventDefault();
+	} else {
+		nameLabel.style.display = "none";
+		name.style.width = "394px";
 	}
 
 	if (message.value == "") {
 		messageLabel.style.display = "inline";
 		message.style.width = "364px";
 		event.preventDefault();
+	} else {
+		nameLabel.style.display = "none";
+		name.style.width = "394px";
 	}
 }
