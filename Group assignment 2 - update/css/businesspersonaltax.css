@@ -1,32 +1,25 @@
-#content1
+#left
 {
 	float:left;
 	margin-top: 20px;
 }
 
-#content2
+#right
 {
 	padding:5px;
 	float:right;
 	width: 600px;
-	height: 202px;
 }
 
-#content3
+#content li
 {
-	padding: 10px;
-	float:left;
+	list-style: circle;
+	padding: 5px;
+	height: 12px;
+	padding-bottom: 11px;
 }
 
-#content3 ul
+#content li p
 {
-	list-style-type: circle;
-}
-
-#content4
-{
-	padding:5px;
-	float:right;
-	width: 600px;
-	height: 239px;
+	margin-top: 0;
 }

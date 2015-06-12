@@ -24,11 +24,13 @@ function grabId(event) {
 	var lightbox = document.getElementById("offsiteNav");
 	var go = document.getElementById("externalLink");
 	var cancel = document.getElementById("back");
+	var clickOff = document.getElementsByClassName("clickOff");
 	
 	//display the lightbox
 	lightbox.style.display = "inline";
 	//if the user made a mistake, kill the lightbox
 	cancel.onclick = killBox;
+	clickOff[0].onclick = killBox;
 	//we pass the link from the image to the link in the lightbox
 	go.href = event.target.id;
 }
@@ -41,16 +43,19 @@ function grabHref(event) {
 	var lightbox = document.getElementById("offsiteNav");
 	var go = document.getElementById("externalLink");
 	var cancel = document.getElementById("back");
-	
+	var clickOff = document.getElementsByClassName("clickOff");
+
 	//display the lightbox
 	lightbox.style.display = "inline";
 	//if the user made a mistake, kill the lightbox
 	cancel.onclick = killBox;
+	clickOff[0].onclick = killBox;
 	//we pass the link from the image to the link in the lightbox
 	go.href = event.target.href;
 }
 
 function killBox(event) {
+	console.log(event.target);
 	//grab the lightbox
 	var lightbox = document.getElementById("offsiteNav");
 	//stop displaying the lightbox

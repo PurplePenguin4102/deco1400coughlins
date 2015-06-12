@@ -2,7 +2,7 @@
 window.addEventListener("load", listenDestination, false);
 
 function listenDestination() {
-	//grab the buttons
+	//grab the buttons in the form
 	var toowoomba = document.getElementById("toowoomba");
 	var brisbane = document.getElementById("brisbane");
 
