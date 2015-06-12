@@ -35,6 +35,7 @@ function validate(event) {
 		name.style.width = "394px";
 	}
 	
+	//the rest of this code is the same statement above except names are changed
 	if (email.value == "") {
 		emailLabel.style.display = "inline";
 		email.style.width = "364px";
