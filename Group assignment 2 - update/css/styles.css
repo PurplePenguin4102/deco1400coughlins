@@ -173,10 +173,12 @@ div.outside.gradient
 	width: 110px;
 	text-align: center;
 	font-size: 24px;
+	font-weight: bold;
 	transition: background-color 0.5s;
 	margin-right: 10px;
 	margin-left: 5px;
 	padding: 0 50px;
+	box-shadow: 5px 5px 2px #888888;
 }
 
 #back
@@ -185,8 +187,10 @@ div.outside.gradient
 	width: 110px;
 	text-align: center;
 	font-size: 24px;
+	font-weight: bold;
 	transition: background-color 0.5s;	
 	padding: 0 36px;
+	box-shadow: 5px 5px 2px #888888;
 }
 
 #externalLink:hover
