@@ -40,8 +40,8 @@ function validate(event) {
 		email.style.width = "364px";
 		event.preventDefault();
 	} else {
-		nameLabel.style.display = "none";
-		name.style.width = "394px";
+		emailLabel.style.display = "none";
+		email.style.width = "394px";
 	}
 
 	if (subject.value == "") {
@@ -49,8 +49,8 @@ function validate(event) {
 		subject.style.width = "364px";
 		event.preventDefault();
 	} else {
-		nameLabel.style.display = "none";
-		name.style.width = "394px";
+		subjectLabel.style.display = "none";
+		subject.style.width = "394px";
 	}
 
 	if (message.value == "") {
@@ -58,7 +58,7 @@ function validate(event) {
 		message.style.width = "364px";
 		event.preventDefault();
 	} else {
-		nameLabel.style.display = "none";
-		name.style.width = "394px";
+		messageLabel.style.display = "none";
+		message.style.width = "394px";
 	}
 }
