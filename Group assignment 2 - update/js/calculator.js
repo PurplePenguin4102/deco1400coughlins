@@ -1,7 +1,12 @@
 window.addEventListener("load", setup, false);
+var datum;
+var ctx;
+var lineChart;
 
 function setup() {
 	var button = document.getElementById("compute");
+	ctx = document.getElementById("myChart").getContext("2d");
+
 	button.onclick = calculate;
 	calculate();
 }
@@ -21,30 +26,38 @@ function calculate() {
 	var salary = parseInt(document.getElementById("salary").value) * 0.0925 ;
 	var monthly = parseInt(document.getElementById("monthly").value);
 	var contribution = salary/12 + monthly;
+	var tax = 1 - 8 / 100;
 
 	var datum = [];
 	for (i = 0; i < xrange.length; i++) {
-		datum.push(contribution * (1 + interest / 12) * (Math.pow((1 + interest / 12), (i * 12)) - 1) / (interest/12));
-
-			//(principle * Math.pow((1 + interest / 12), (12 * i))) +
-			//contribution * ((Math.pow(1 + interest / 12), (12 * i - 1)) / (interest / 12)));
+		datum.push((principle + contribution * (1 + interest / 12) * (Math.pow((1 + interest / 12), (i * 12)) - 1) / (interest/12) * tax).toFixed(2));
 	}
-
 	var data = {
     	labels: xrange,
     	datasets: [
 	        {
-	            label: "My First dataset",
-	            fillColor: "rgba(220,220,220,0.2)",
-	            strokeColor: "rgba(220,220,220,1)",
-	            pointColor: "rgba(220,220,220,1)",
+	            label: "Superannuation",
+	            fillColor: "rgba(255, 250, 139, 0.2)",
+	            strokeColor: "rgba(255, 250, 139, 1)",
+	            pointColor: "rgba(255, 250, 139, 1)",
 	            pointStrokeColor: "#fff",
 	            pointHighlightFill: "#fff",
-	            pointHighlightStroke: "rgba(220,220,220,1)",
+	            pointHighlightStroke: "rgba(255, 250, 139, 1)",
 	            data: datum
 	        }
 	    ]
     };
-	var ctx = document.getElementById("myChart").getContext("2d");
-	var myNewChart = new Chart(ctx).Line(data);
+    var options = {
+ 	   scaleShowVerticalLines: false,
+ 	   pointHitDetectionRadius : 4
+	};
+
+    if (lineChart != null) {
+		lineChart.destroy();
+	}
+
+    lineChart = new Chart(ctx).Line(data, options);
+
+    var result = document.getElementById("result");
+    result.innerHTML = "Your Super at " + xend + " is: $" + datum[xrange.length - 1];
 }
