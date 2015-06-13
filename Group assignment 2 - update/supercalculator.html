@@ -7,6 +7,9 @@
 		<title>Coughlins Accountants</title>
 		<meta name="robots" content="index, follow">
 		<link rel="stylesheet" href="css/styles.css" type="text/css">
+		<link rel="stylesheet" href="css/calculator.css" type="text/css">
+		<script src="js/Chart.js" type="text/javascript"></script>
+		<script src="js/calculator.js" type="text/javascript"></script>
 	</head>
 	
 	<body>
@@ -68,16 +71,39 @@
 			<div id="content" >
 				<h3>Superannuation Calculator</h3>
 				<p>This calculator will help you work out what to expect from your retirement plans. We do not recommend any superannuation funds or plans, this is just a tool to help you decide for yourself. With this calculator you should be able to determine if a super fund with more fees but a higher interest rate is better for you.</p>
-
 				<form id="calculator">
-					<label for="current">Current age:</label>
-					<input type="text" name="current" id="current">
-					<label for"retirement">Retirement age:</label>
-					<input type="text" name="retirement" id="retirement">
-					<label for="starting">Current Superannuation</label>
-					<input type="text" name="starting" id="starting">
-					
+					<ul>
+						<li class="inputlist">
+							<label for="current">Current age</label>
+							<input class="small" type="text" name="current" id="current" value="25">
+						</li>
+						<li class="inputlist">
+							<label for"retirement">Retirement age</label>
+							<input class="small" type="text" name="retirement" id="retirement" value="65">
+						</li>
+						<li class="inputlist">
+							<label for="starting">Current Superannuation</label>
+							<input type="text" name="starting" id="starting" value="20000">
+						</li>
+						<li class="inputlist">
+							<label for="salary">Annual Salary</label>
+							<input type="text" name="salary" id="salary" value="45000">
+						</li>
+						<li class="inputlist">
+							<label for="monthly">Monthly Contribution</label>
+							<input type="text" name="monthly" id="monthly" value="500">
+						</li>
+						<li class="inputlist">
+							<label for="interest">Interest</label>	
+							<input class="small" type="text" name="interest" id="interest" value="5">
+						</li>
+						<li class="inputlist">
+							<input type="button" id="compute" value="Calculate">
+						</li>
+					</ul>
 				</form>
+				<canvas id="myChart" width="600" height="400"></canvas>
+				<div class="clear"></div>
 			</div>
 		</div>	
 

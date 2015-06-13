@@ -1,0 +1,21 @@
+#calculator ul li.inputlist
+{
+	margin-top: 16px;
+}
+
+#calculator label
+{
+	display: block;
+	margin-bottom: 5px;
+}
+
+#calculator input.small
+{
+	width: 40px;
+}
+
+#calculator
+{	
+	float: left;
+	width: 300px;
+}
