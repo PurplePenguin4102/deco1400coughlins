@@ -1,0 +1,25 @@
+img.left
+{
+	float: left;
+	margin-top: 20px;
+	padding: 5px;
+	width: 300px;
+}
+
+.right
+{
+	float:right;
+	padding: 15px;
+	width: 600px;
+}
+
+.right h2
+{
+	text-align: left;
+	padding-left: 0px;
+}
+
+#content div.service
+{
+	margin-top: 20px;
+}
