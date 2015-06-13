@@ -13,6 +13,11 @@ p.last_paragraph
 	margin-bottom: 29px;
 }
 
+.circle p
+{
+	margin: 10px 0;
+}
+
 li.tax
 {
 	margin-bottom: 10px;
