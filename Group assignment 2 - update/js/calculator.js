@@ -16,7 +16,7 @@ function calculate() {
 	var xrange = [];
 	var xstart = parseInt(document.getElementById("current").value);
 	var xend = parseInt(document.getElementById("retirement").value);
-	for (i = 0; i < xend - xstart; i++) {
+	for (i = 0; i <= xend - xstart; i++) {
 		xrange.push(i + xstart);
 	}
 
@@ -29,7 +29,7 @@ function calculate() {
 	var tax = 1 - 8 / 100;
 
 	var datum = [];
-	for (i = 0; i < xrange.length; i++) {
+	for (i = 0; i <= xrange.length; i++) {
 		datum.push((principle + contribution * (1 + interest / 12) * (Math.pow((1 + interest / 12), (i * 12)) - 1) / (interest/12) * tax).toFixed(2));
 	}
 	var data = {
@@ -37,9 +37,9 @@ function calculate() {
     	datasets: [
 	        {
 	            label: "Superannuation",
-	            fillColor: "rgba(255, 250, 139, 0.2)",
-	            strokeColor: "rgba(255, 250, 139, 1)",
-	            pointColor: "rgba(255, 250, 139, 1)",
+	            fillColor: "rgba(255, 217, 1, 0.2)",
+	            strokeColor: "rgba(255, 217, 1, 1)",
+	            pointColor: "rgba(255, 217, 1, 1)",
 	            pointStrokeColor: "#fff",
 	            pointHighlightFill: "#fff",
 	            pointHighlightStroke: "rgba(255, 250, 139, 1)",
@@ -49,7 +49,7 @@ function calculate() {
     };
     var options = {
  	   scaleShowVerticalLines: false,
- 	   pointHitDetectionRadius : 4
+ 	   pointHitDetectionRadius : 4,
 	};
 
     if (lineChart != null) {

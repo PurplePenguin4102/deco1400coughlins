@@ -17,5 +17,15 @@
 #calculator
 {	
 	float: left;
-	width: 300px;
+	width: 216px;
+}
+
+#myChart
+{
+
+}
+
+#result
+{
+	margin: 10px 0;
 }
