@@ -50,6 +50,16 @@ function calculate() {
     var options = {
  	   scaleShowVerticalLines: false,
  	   pointHitDetectionRadius : 4,
+ 	   // Boolean - If we want to override with a hard coded scale
+	   scaleOverride: true,
+
+	   // ** Required if scaleOverride is true **
+	   // Number - The number of steps in a hard coded scale
+	   scaleSteps: 11,
+	   // Number - The value jump in the hard coded scale
+	   scaleStepWidth: Math.ceil((datum[datum.length - 1] / 10).toFixed(0) / 1000) * 1000,
+	   // Number - The scale starting value
+	   scaleStartValue: 0
 	};
 
     if (lineChart != null) {
