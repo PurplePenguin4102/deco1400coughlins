@@ -32,7 +32,30 @@ function grabId(event) {
 	cancel.onclick = killBox;
 	clickOff[0].onclick = killBox;
 	//we pass the link from the image to the link in the lightbox
-	go.href = event.target.id;
+	var link
+	var id = event.target.id
+	if (id == "dropit") {
+		link = "http://www.dropitto.me/coughlin";
+	} else if (id == "lawcentral") {
+		link = "http://www.lawcentral.com.au/";
+	} else if (id == "myob") {
+		link = "http://myob.com.au/";
+	} else if (id == "ato") {
+		link = "https://www.ato.gov.au/";
+	} else if (id == "asic") {
+		link = "http://asic.gov.au/for-business/renewing-and-maintaining-your-business-name/search-a-business-name/";
+	} else if (id == "asx") {
+		link = "http://www.asx.com.au/"
+	} else if (id == "yellow") {
+		link = "https://www.yellowpages.com.au/"
+	} else if (id == "godaddy") {
+		link = "https://au.godaddy.com/"
+	} else if (id == "quicken") {
+		link = "http://www.quicken.com/"
+	} else if (id == "symantec") {
+		link = "http://www.symantec.com/en/au/"
+	} 
+	go.href = link;
 }
 
 function grabHref(event) {
