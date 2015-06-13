@@ -13,6 +13,11 @@ img.left
 	width: 600px;
 }
 
+.right p
+{
+	margin-left: 0;
+}
+
 .right h2
 {
 	text-align: left;
@@ -21,7 +26,7 @@ img.left
 
 #content div.service
 {
-	margin-top: 20px;
+	margin-top: 35px;
 }
 
 a.push_left

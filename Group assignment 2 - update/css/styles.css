@@ -110,10 +110,10 @@ div.outside.gradient
 		margin-right: auto;
 		z-index:10;
 	}
-/*idea for the CSS lightbox is adapted from http://codepen.io/gschier/pen/HCoqh /*
-/******************
-* offsite nav *
-******************/
+/*idea for the CSS lightbox is adapted from http://codepen.io/gschier/pen/HCoqh */
+/***************************
+* offsite nav (lightbox) *
+****************************/
 
 #offsiteNav
 {
@@ -358,203 +358,202 @@ div.gradient
 *    home  *
 ******************/		
 	
-#address1 , #address2
-	{
-		padding: 20px;
-	}
-	
+.address
+{
+	padding: 20px;
+}
+
 .addresspic
-	{
-		margin:10px 70px 30px 20px;
-		float: left;
-	}
+{
+	margin:10px 70px 30px 20px;
+	float: left;
+}
 
 #content ul.circle 
-	{
-		list-style-type: circle;
-		padding-left: 40px;
-	}
+{
+	list-style-type: circle;
+	padding-left: 40px;
+}
 	
 /******************
 *    footer  *
 ******************/	
 #footer
-	{
-		overflow: hidden;
-		background-color: #ffd901;
-		clear: both;
-		border-radius: 150px 150px 0 0;
-		width: 100%;
-		height: 227px;
-	}
+{
+	overflow: hidden;
+	background-color: #ffd901;
+	clear: both;
+	border-radius: 150px 150px 0 0;
+	width: 100%;
+	height: 227px;
+}
 #footer_container
-	{
-		position: absolute;
-		margin-left: auto;
-		margin-right: auto;
-		left: 0;
-		right: 0;
-		width: 1000px;
+{
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	width: 1000px;
 
-	}
+}
 #footer p
-	{
-		font-size: 12px;
-		margin: -1px;
-	}
-	
+{
+	font-size: 12px;
+	margin: -1px;
+}
+
 #announcement
-	{
-		clear: both;
-		text-align: center;
-		font-weight: bold;
-	}
-	
+{
+	clear: both;
+	text-align: center;
+	font-weight: bold;
+}
+
 #announcement hr
-	{
-		width: 95%;
-		margin-top: 0;
-		border: 2px solid #090909;
-	}	
-	
+{
+	width: 95%;
+	margin-top: 0;
+	border: 2px solid #090909;
+}	
+
 .bottom
-	{
-		width: 125px;
-		float: left;
-		padding: 30px;
-	}
+{
+	width: 125px;
+	float: left;
+	padding: 30px;
+}
 
 .bottom img
-	{
-		width: 20px;
-	}
-	
+{
+	width: 20px;
+}
+
 .logo
-	{
-		float: left;
-		width:  230px;
-	}
+{
+	float: left;
+	width:  230px;
+}
 	
 /******************
 *   Contact  *
 ******************/		
 
 #contactmail
-	{
-		float: left;
-		width: 50%;
-	}
+{
+	float: left;
+	width: 50%;
+}
 
-	#contactname
-		{
-			float:left;
-		}
-		
-	#contactaddress
-		{
-			float:left;
-			margin-left: 45px;
-		}	
+#contactname
+{
+	float:left;
+}
+
+#contactaddress
+{
+	float:left;
+	margin-left: 45px;
+}	
 	
 #contactform
-	{
-		float:left;
-		width: 50%;
-	}	
+{
+	float:left;
+	width: 50%;
+}	
 
-	#form
-		{
-			padding: 10px; /* temporary: do something more here */
-		}
+#form
+{
+	padding: 10px; /* temporary: do something more here */
+}
 	
 /******************
 *   addition  *
 ******************/		
 .clear 
-	{
-		clear: both;
-	}
+{
+	clear: both;
+}
 
 .center
-	{
-		text-align: center;
-	}
+{
+	text-align: center;
+}
 	
 p
-	{
-		font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
-		font-size: 14px;
-		margin: 10px 0 10px 0;
-		line-height: 20px;
-	}
+{
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	font-size: 14px;
+	margin: 10px 0 10px 0;
+	line-height: 20px;
+}
 
 b
-	{
-		font-weight: bold; 
-	}
-	
+{
+	font-weight: bold; 
+}
+
 h1
-	{
-		font-family: Georgia,Times,"Times New Roman",serif;
-		font-size: 25px;
-		font-weight: bold;
-		padding: 4px;
-	}
+{
+	font-family: Georgia,Times,"Times New Roman",serif;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 4px;
+}
 
 h2
-	{
-		font-family: Georgia,Times,"Times New Roman",serif;
-		font-size: 25px; 
-		text-align: center;
-		padding: 8px;
-		background: white;
-	}
-	
+{
+	font-family: Georgia,Times,"Times New Roman",serif;
+	font-size: 25px; 
+	text-align: center;
+	padding: 8px;
+	background: white;
+}
+
 h3
-	{
-		font-family: Georgia,Times,"Times New Roman",serif;
-		font-size: 20px; 
-		font-weight: bold; 
-		margin: 3px; 
-		text-align: center;
-	}
-	
+{
+	font-family: Georgia,Times,"Times New Roman",serif;
+	font-size: 20px; 
+	font-weight: bold; 
+	margin: 3px; 
+	text-align: center;
+}
+
 h4
-	{
-		font-size: 12px;
-		font-weight: bold;
-		margin-bottom: 10px;
-	}
+{
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
 
 h5
-	{
-		font-size: 18px;
-		font-weight: bold;
-		margin-bottom: 15px;
-		text-align: center;
-	}	
-	
+{
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	text-align: center;
+}	
+
 a:link 
-	{
-		color: #090909;
-		text-decoration: none;
-	}
+{
+	color: #090909;
+	text-decoration: none;
+}
 
 a:visited 
-	{
-		color: #494949;
-		text-decoration: none;
-	}
+{
+	color: #494949;
+	text-decoration: none;
+}
 
 a:hover 
-	{
-		color: #090909;
-		text-decoration: underline;
-	}
+{
+	color: #090909;
+	text-decoration: underline;
+}
 
 a:active
-	{
-		color: #090909;
-		text-decoration: underline;
-	}
-	
+{
+	color: #090909;
+	text-decoration: underline;
+}
