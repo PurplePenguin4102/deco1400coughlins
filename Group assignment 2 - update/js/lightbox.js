@@ -34,6 +34,7 @@ function grabId(event) {
 	//we pass the link from the image to the link in the lightbox
 	var link
 	var id = event.target.id
+	// read the id and grab the link
 	if (id == "dropit") {
 		link = "http://www.dropitto.me/coughlin";
 	} else if (id == "lawcentral") {
