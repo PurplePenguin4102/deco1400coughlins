@@ -31,15 +31,20 @@ function calculate() {
 	// we grab the user variables that let us work out the parts of our model
 	// we need principle P
 	var principle = parseInt(document.getElementById("starting").value);
-	// the rate r will be interest + inflation
+	// the rate r will be interest - inflation in today's dollars, we then factor in living standards
 	var interest = parseInt(document.getElementById("interest").value)/100;
+	var inflation = 2.5/100;
+	var standards = 1/100;
+	interest -= (inflation + standards);
 	
 
 	// PMT will be from our monthly contribution, 9.25% of salary, nominated "monthly" value and take away fees
 	var fees = 50;
 	var salary = parseInt(document.getElementById("salary").value) * 0.0925 ;
 	var monthly = parseInt(document.getElementById("monthly").value);
-	var contribution = salary / 12 + monthly - fees / 12;
+	var insurance = 100;
+	var contribution = salary + monthly * 12 - fees - insurance;
+
 
 	// finally the whole thing is taxed yearly
 	var tax = 1 - 8 / 100;
@@ -49,10 +54,15 @@ function calculate() {
 
 	// now we work out the model, I used: A = P + PMT * (1 + r) * ((1 + r)^t - 1) * r^(-1) * tax
 	// source: http://www.cs.ucr.edu/~ehwang/interest.html
-	// the 12's are in there to compound it monthly instead of yearly. I'm fairly sure this model
-	// is not realistic to superannuation but for this assignment I thought look was more important
+	// we compound yearly for this case. I'm fairly sure this model is not realistic to 
+	// superannuation but for this assignment I thought look was more important
 	for (i = 0; i <= xrange.length; i++) {
-		datum.push((principle + contribution * (1 + interest / 12) * (Math.pow((1 + interest / 12), (i * 12)) - 1) / (interest/12) * tax).toFixed(2));
+		datum.push((principle + 
+					contribution * 
+					(1 + interest) * 
+					(Math.pow((1 + interest), (i)) - 1) / 
+					(interest) * 
+					tax).toFixed(2));
 	}
 
 	// now we populate our chart with data
