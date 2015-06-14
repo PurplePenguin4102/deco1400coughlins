@@ -354,6 +354,21 @@ div.gradient
 		background: linear-gradient(#ffd901 0%, white 95%); /* Standard syntax (must be last) */
 	}
 
+#content img
+{
+	-moz-border-radius:10px; 
+	-webkit-border-radius:10px; 
+	border-radius:10px; 
+	transition: box-shadow 0.5s;
+}
+
+#content img:hover
+{
+	-moz-box-shadow: 5px 5px 5px #ccc; 
+	-webkit-box-shadow: 5px 5px 5px #ccc; 
+	box-shadow: 5px 5px 5px #ccc; 
+}
+
 /******************
 *    home  *
 ******************/		
